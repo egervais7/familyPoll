@@ -41,7 +41,11 @@ button {
   position: relative;
   left: 12%;
 }
+.imgDiv {
+  justify-content: center;
+}
 .imgClass {
+  margin: 0;
   widht: 650px;
   height: 400px;
 }
