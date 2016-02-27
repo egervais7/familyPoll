@@ -49,3 +49,10 @@ button {
   widht: 650px;
   height: 400px;
 }
+@media (min-width: 480px) {
+  .imgClass {
+    margin: 0;
+    width: 400px;
+    height: 225px;
+  }
+}
