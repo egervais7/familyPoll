@@ -8,15 +8,18 @@ $(document).ready(function() {
     count13++;
     document.getElementById("mar13Count").innerHTML = count13;
   };
+  countMar13();
 
   var countMar20 = function() {
     count20++;
     document.getElementById("mar20Count").innerHTML = count20;
   };
+  countMar20();
 
   var noShowCount = function() {
     noShow++;
     document.getElementById("noShowCount").innerHTML = noShow;
   };
+  noShowCount();
 
 });
