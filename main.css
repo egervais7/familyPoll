@@ -9,7 +9,7 @@ body {
 .navLinks {
   background : rgb(210, 236, 48);
 }
-p, h1 {
+p, h1, a {
   font-color : green;
   font-family: 'Satisfy', cursive;
   font-size: 25px;
