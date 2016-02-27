@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Gervais Family Poll</title>
+    <link rel="stylesheet" href="../main.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="../index.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-default navText navMain" style="height: 100px;">
+      <div class="container-fluid">
+        <header style="text-align: center"><h1 class="welcomeH1">Welcome to the Gervais Family Poll!</h1>
+        </header>
+      </div>
+    </nav>
+    <section class="row links">
+      <div class="col-xs-4"></div>
+      <div class="col-xs-4 links">
+        <nav class="navbar navbar-default navText navLinks" style="height: 100px;">
+          <div class="container-fluid text-center">
+            <ul class="nav navbar-nav navbar-left" style='position: relative; right:20px'>
+              <li style="font-weight: bold; font-size: 15px"><a href="http://www.edgervais.com">Ed's Portfolio</a></li>
+              <li style="font-weight: bold; font-size: 15px"><a href="https://woodiesapp.herokuapp.com">WoodWorking Application</a></li>
+              <li style="font-weight: bold; font-size: 15px"><a href="https://profiles.generalassemb.ly/profiles/edward-gervais">General Assembly Profile</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="col-xs-4"></div>
+    </section>
+    <section class="row poll">
+      <div class="col-xs-2"></div>
+      <div class="col-xs-3 mar13Poll">
+        <button type="btn btn-info btn-lg" type="button" onclick="countMar13()">Vote For March 13</button>
+        <p class="mar13P">Votes : <div id="mar13Count">0</div></p>
+      </div>
+      <div class="col-xs-2 noShowPoll">
+        <button type="btn btn-info btn-lg" type="button" onclick="noShowCount()">Can't Make it</button>
+        <p class="noShowP">Votes : <div id="noShowCount">0</div></p>
+      </div>
+      <div class="col-xs-3 mar20Poll">
+        <button type="btn btn-info btn-lg" type="button" onclick="countMar20()">Vote For March 20</button>
+        <p class="mar20P">Votes : <div id="mar20Count">0</div></p>
+      </div>
+      <div class="col-xs-2"></div>
+    </section>
+  </body>
+</html>
