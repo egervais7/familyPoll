@@ -4,3 +4,6 @@
 .navLinks {
   background : rgb(210, 236, 48);
 }
+p {
+  font-color : green;
+}
