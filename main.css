@@ -1,9 +1,37 @@
+body {
+  background: url('http://i.imgur.com/gQ2GbZI.jpg');
+  background-size   : 100% 100%;
+  background-repeat : no-repeat;
+}
 .navMain {
   background : rgb(93, 222, 43);
 }
 .navLinks {
   background : rgb(210, 236, 48);
 }
-p {
+p, h1 {
   font-color : green;
+  font-family: 'Satisfy', cursive;
+  font-size: 25px;
+  font-weight: bolder;
+}
+h1 {
+  font-size: 50px !important;
+}
+button {
+  font-color: rgb(17, 20, 97);
+  font-family: 'Bangers', cursive;
+  font-size: 60px;
+  font-weight: bold;
+}
+.about {
+  background: rgba(251, 246, 251, 0.7);
+  position: relative;
+  left: 15%;
+  width: 66%;
+  height: 100%;
+}
+.votes {
+  background: rgba(251, 246, 251, 0.7);
+  margin: 0 auto;
 }

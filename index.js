@@ -5,21 +5,30 @@ $(document).ready(function() {
   var noShow = 0;
 
   var countMar13 = function() {
-    count13++;
-    document.getElementById("mar13Count").innerHTML = count13;
+    $(".countMar13").on("click", function(){
+      count13++;
+      $("#mar13Count").html(count13);
+    });
   };
+
   countMar13();
 
   var countMar20 = function() {
-    count20++;
-    document.getElementById("mar20Count").innerHTML = count20;
+    $(".countMar20").on("click", function(){
+      count20++;
+      $("#mar20Count").html(count20);
+    });
   };
+
   countMar20();
 
-  var noShowCount = function() {
-    noShow++;
-    document.getElementById("noShowCount").innerHTML = noShow;
+  var noShowFunc = function() {
+    $(".noShowFunc").on("click", function(){
+      noShow++;
+      $("#noShowCount").html(noShow);
+    });
   };
-  noShowCount();
+
+  noShowFunc();
 
 });

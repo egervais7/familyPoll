@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Gervais Family Poll</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="../main.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script type="text/javascript" src="../index.js"></script>
   </head>
@@ -18,31 +20,35 @@
     <section class="row links">
       <div class="col-xs-4"></div>
       <div class="col-xs-4 links">
-        <nav class="navbar navbar-default navText navLinks" style="height: 100px;">
-          <div class="container-fluid text-center">
-            <ul class="nav navbar-nav navbar-left" style='position: relative; right:20px'>
-              <li style="font-weight: bold; font-size: 15px"><a href="http://www.edgervais.com">Ed's Portfolio</a></li>
-              <li style="font-weight: bold; font-size: 15px"><a href="https://woodiesapp.herokuapp.com">WoodWorking Application</a></li>
-              <li style="font-weight: bold; font-size: 15px"><a href="https://profiles.generalassemb.ly/profiles/edward-gervais">General Assembly Profile</a></li>
-            </ul>
+        <nav class="navbar navbar-default navText navLinks" style="height: 110%;">
+          <div class="container-fluid text-center listDiv">
+            <p>Here are some things I made in my class.</p>
+            <div style="font-weight: bold; font-size: 15px"><a href="http://www.edgervais.com">Ed's Portfolio</a></div>
+            <div style="font-weight: bold; font-size: 15px"><a href="https://woodiesapp.herokuapp.com">WoodWorking Application</a></div>
+            <div style="font-weight: bold; font-size: 15px"><a href="https://hikerman.meteorapp.com">Hiker Man Video Game</a></div>
+            <div style="font-weight: bold; font-size: 15px"><a href="https://profiles.generalassemb.ly/profiles/edward-gervais">General Assembly Profile</a></div>
           </div>
         </nav>
       </div>
       <div class="col-xs-4"></div>
     </section>
     <section class="row poll text-center">
+      <p class="about text-center">Corley and I are curious about who might be able to make a family party on either Sunday March 13 (this is the start of Daylight Savings Time), 2016 or Sunday March 20, 2016.<br>
+        If you could please cast your vote! That would be great. Corley and I are thinking about hosting the party at our home in Lake Stevens. <br>
+        It has a limited amount of room, but we would really enjoy having people come to see our home and celebrate some birthdays!<br>
+        We hope to see you all soon!<br>
       <div class="col-xs-2"></div>
       <div class="col-xs-3 mar13Poll">
-        <button type="btn btn-info btn-lg" type="button" onclick="countMar13()">Vote For March 13</button>
-        <p class="mar13P">Votes : <div id="mar13Count">0</div></p>
+        <button class="btn btn-info btn-lg countMar13" type="button">Vote For March 13</button>
+        <p class="votes">Votes : <p id="mar13Count" class="votes">0</p></p>
       </div>
       <div class="col-xs-2 noShowPoll">
-        <button type="btn btn-info btn-lg" type="button" onclick="noShowCount()">Can't Make it</button>
-        <p class="noShowP">Votes : <div id="noShowCount">0</div></p>
+        <button class="btn btn-info btn-lg noShowFunc" type="button">Can't Make it</button>
+        <p class="votes">Votes : <p id="noShowCount" class="votes">0</p></p>
       </div>
       <div class="col-xs-3 mar20Poll">
-        <button type="btn btn-info btn-lg" type="button" onclick="countMar20()">Vote For March 20</button>
-        <p class="mar20P">Votes : <div id="mar20Count">0</div></p>
+        <button class="btn btn-info btn-lg countMar20" type="button">Vote For March 20</button>
+        <p class="votes">Votes : <p id="mar20Count" class="votes">0</p></p>
       </div>
       <div class="col-xs-2"></div>
     </section>
