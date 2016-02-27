@@ -31,8 +31,8 @@ $(document).ready(function() {
       if (clicks < 2) {
         $("#mar13Count").html(count13);
       }
+      localStorage.setItem('voteCount13', JSON.stringify(count13));
     });
-    localStorage.setItem('voteCount13', JSON.stringify(count13));
   };
 
   countMar13();
@@ -44,8 +44,8 @@ $(document).ready(function() {
       if (clicks < 2) {
         $("#mar20Count").html(count20);
       }
+      localStorage.setItem('voteCount20', JSON.stringify(count20));
     });
-    localStorage.setItem('voteCount20', JSON.stringify(count20));
   };
 
   countMar20();
@@ -57,8 +57,8 @@ $(document).ready(function() {
       if (clicks < 2) {
         $("#noShowCount").html(noShow);
       }
+      localStorage.setItem('voteCountNoShow', JSON.stringify(noShow));
     });
-    localStorage.setItem('voteCountNoShow', JSON.stringify(noShow));
   };
 
   noShowFunc();
